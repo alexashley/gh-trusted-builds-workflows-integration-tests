@@ -8,9 +8,11 @@ on:
 jobs:
   build-and-push:
     uses: liatrio/gh-trusted-builds-workflows/.github/workflows/build-and-push.yaml@tuf-root-path
+    with:
+      environment: staging
     permissions:
         actions: read
         id-token: write
         contents: read
         packages: write
-        pull-requests: read      
+        pull-requests: read
