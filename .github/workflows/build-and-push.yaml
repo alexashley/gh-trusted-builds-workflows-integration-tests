@@ -16,5 +16,3 @@ jobs:
       contents: read
       packages: write
       pull-requests: read
-    with:
-      environment: staging
